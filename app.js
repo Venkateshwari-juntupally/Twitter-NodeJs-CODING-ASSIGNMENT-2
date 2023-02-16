@@ -373,6 +373,7 @@ app.post("/user/tweets/", authenticationToken, async (request, response) => {
 
 /*
 //to check if the tweet got updated
+
 app.get("/tweets/", authenticationToken, async (request, response) => {
   const requestQuery = `select * from tweet;`;
   const responseResult = await database.all(requestQuery);
