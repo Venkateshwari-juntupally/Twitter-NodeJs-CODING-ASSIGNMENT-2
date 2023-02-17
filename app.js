@@ -348,7 +348,7 @@ app.get("/user/tweets/", authenticationToken, async (request, response) => {
   const getTweetIds = getTweetIdsArray.map((eachId) => {
     return parseInt(eachId.tweet_id);
   });
-  console.log(getTweetIds);
+  response.send(getTweetIds);
 });
 
 //api 10
